@@ -56,3 +56,18 @@ test4_demo4.json
 
 I used [ajv-cli](https://github.com/jessedc/ajv-cli) on Windows 10 as the validation tool.  I had to install
 [Node.js](https://nodejs.org/en/download/) first, and it seem happiest installing and running out of a git bash shell.
+
+
+### test_regex.json
+
+Regex pattern matching. I used this with the Python jsonchema module, but in order to work you have to install it with the format setuptools extra.
+
+pip install jsonschema(format)
+
+See the "Validating Formats" section of this document: https://buildmedia.readthedocs.org/media/pdf/python-jsonschema/latest/python-jsonschema.pdf
+
+Test files:
+
+test_regex_demo1.json
+
+test_regex_demo2.json
