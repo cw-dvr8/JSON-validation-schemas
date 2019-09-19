@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/veoibd_schema.json",
+  "title": "clinical data manifest schema",
+  "description": "Validates clinical data manifests provided by VEOIBD consortium members",
+  "type": "object",
+  "properties": {
+    "individualID": {
+      "type": "string",
+      "pattern": "^VEOIBD-"
+    }
+  }
+}
