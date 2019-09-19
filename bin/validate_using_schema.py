@@ -28,7 +28,7 @@ from jsonschema import validate
 import os
 import pandas as pd
 
-def validate_object(json_val_schema, reference_uri, object_to_validate):
+def validate_object(json_val_schema, object_to_validate):
     
     schema_validator = jsonschema.Draft7Validator(json_val_schema)
 
@@ -78,11 +78,11 @@ def main():
             # JSON validation schema.
             clean_record = {k: data_record[k] for k in data_record if data_record[k] is not None}
 
-            validate_object(json_schema, ref_uri, clean_record)
+            validate_object(json_schema, clean_record)
     
     else:
         val_json_obj = json.load(args.validation_obj_file)
-        validate_object(json_schema, ref_uri, val_json_obj)
+        validate_object(json_schema, val_json_obj)
 
 if __name__ == "__main__":
     main()
