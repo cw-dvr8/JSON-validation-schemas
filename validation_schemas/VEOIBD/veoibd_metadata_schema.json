@@ -6,7 +6,8 @@
   "type": "object",
   "properties": {
     "individualID": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/individualID"
+      "type": "string",
+      "pattern": "^VEOIBD-"
     },
     "sex": {
       "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/sex"
