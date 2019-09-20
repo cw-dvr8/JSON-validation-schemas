@@ -2,6 +2,10 @@
 
 These are schemas that I used to figure out how JSON validation schemas work.
 
+I used [ajv-cli](https://github.com/jessedc/ajv-cli) on Windows 10 as the validation tool for the following schemas.  I had to install
+[Node.js](https://nodejs.org/en/download/) first, and it seem happiest installing and running out of a git bash shell.
+
+
 ### test1_validator_schema.json
 
 This is as basic as it gets. This was just for me to get in my mind how a validation schema works.
@@ -10,6 +14,7 @@ This is as basic as it gets. This was just for me to get in my mind how a valida
 
 test1_demo1.json  
 test1_demo2.json
+
 
 
 ### test2_validator_schema.json
@@ -23,6 +28,7 @@ test2_demo2.json
 test2_demo3.json
 
 
+
 ### test3_validator_schema.json
 
 Here I'm introducing a compound "if" statement; in other words, "if condition1 and condition2 then..."
@@ -32,6 +38,7 @@ Here I'm introducing a compound "if" statement; in other words, "if condition1 a
 test3_demo1.json  
 test3_demo2.json  
 test3_demo3.json
+
 
 
 ### test4_validator_schema.json
@@ -46,17 +53,16 @@ test4_demo3.json
 test4_demo4.json
 
 
-I used [ajv-cli](https://github.com/jessedc/ajv-cli) on Windows 10 as the validation tool.  I had to install
-[Node.js](https://nodejs.org/en/download/) first, and it seem happiest installing and running out of a git bash shell.
 
-
-### test_regex.json
-
-Regex pattern matching. I used this with the Python jsonchema module, but in order to work you have to install it with the format setuptools extra.
+I used the Python jsonschema module to validate the following schemas, but in order to work you have to install it with the format setuptools extra.
 
 pip install jsonschema(format)
 
 See the "Validating Formats" section of this document: https://buildmedia.readthedocs.org/media/pdf/python-jsonschema/latest/python-jsonschema.pdf
+
+### test_regex.json
+
+Regex pattern matching. 
 
 #### Test files:
 
@@ -64,9 +70,10 @@ test_regex_demo1.json
 test_regex_demo2.json
 
 
+
 ### test_regex_nocase.json
 
-Regex pattern matching that ignores case for very specific values.  Clunky, but apparently JSON validation schemas don't support ignore case flags (or at least I couldn't get it to work).
+Regex pattern matching that ignores case for very specific values.  Clunky, but apparently JSON validation schemas don't support ignore case flags (or at least I couldn't get it to work).  
 
 #### Use case:
 
