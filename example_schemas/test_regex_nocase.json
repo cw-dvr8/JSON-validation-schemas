@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/veoibd_schema.json",
+  "title": "clinical data manifest schema",
+  "description": "Validates clinical data manifests provided by VEOIBD consortium members",
+  "type": "object",
+  "properties": {
+    "TrueFalseField": {
+      "anyOf": [
+        {"pattern": "([Tt]{1}[Rr]{1}[Uu]{1}[Ee]{1})"},
+        {"pattern": "([Ff]{1}[Aa]{1}[Ll]{1}[Ss]{1}[Ee]{1})"}
+      ]
+    }
+  }
+}
