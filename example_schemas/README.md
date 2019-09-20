@@ -13,7 +13,7 @@ This is as basic as it gets. This was just for me to get in my mind how a valida
 #### Test files:
 
 test1_demo1.json  
-test1_demo2.json
+test1_demo2.json  
 
 
 
@@ -25,7 +25,7 @@ Here I'm introducing the "if"/"then" statement.
 
 test2_demo1.json  
 test2_demo2.json  
-test2_demo3.json
+test2_demo3.json  
 
 
 
@@ -37,7 +37,7 @@ Here I'm introducing a compound "if" statement; in other words, "if condition1 a
 
 test3_demo1.json  
 test3_demo2.json  
-test3_demo3.json
+test3_demo3.json  
 
 
 
@@ -50,7 +50,7 @@ Another compound "if" statement, except this time I'm negating one of the condit
 test4_demo1.json  
 test4_demo2.json  
 test4_demo3.json  
-test4_demo4.json
+test4_demo4.json  
 
 
 
@@ -67,7 +67,7 @@ Regex pattern matching.
 #### Test files:
 
 test_regex_demo1.json  
-test_regex_demo2.json
+test_regex_demo2.json  
 
 
 
