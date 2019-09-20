@@ -8,7 +8,9 @@
     "TrueFalseField": {
       "anyOf": [
         {"pattern": "([Tt]{1}[Rr]{1}[Uu]{1}[Ee]{1})"},
-        {"pattern": "([Ff]{1}[Aa]{1}[Ll]{1}[Ss]{1}[Ee]{1})"}
+        {"pattern": "([Ff]{1}[Aa]{1}[Ll]{1}[Ss]{1}[Ee]{1})"},
+        {"const": true},
+        {"const": false}
       ]
     }
   }
