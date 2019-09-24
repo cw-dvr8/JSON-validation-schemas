@@ -27,16 +27,6 @@
           "source": ""
         },
         {
-          "const": "True",
-          "description": "The individual has Jewish ancestry",
-          "source": ""
-        },
-        {
-          "const": "False",
-          "description": "The individual does not have Jewish ancestry",
-          "source": ""
-        },
-        {
           "const": "Unknown",
           "description": "Unknown whether the individual has Jewish ancestry",
           "source": ""
@@ -45,11 +35,11 @@
     },
     "anisogenicReplicate": {
       "description": "Replicates from similar tissue biosamples derived from different human donor or model organism strains",
-      "type": "string"
+      "type": "integer",
     },
     "biologicalReplicate": {
       "description": "Replicates from distinct biosamples on which the same experimental protocol was performed",
-      "type": "string"
+      "type": "integer"
     },
     "BMI": {
       "description": "Body Mass Index",
@@ -103,16 +93,6 @@
         },
         {
           "const": false,
-          "description": "The individual was not breastfed",
-          "source": ""
-        },
-        {
-          "const": "True",
-          "description": "The individual was breastfed",
-          "source": ""
-        },
-        {
-          "const": "False",
           "description": "The individual was not breastfed",
           "source": ""
         },
@@ -177,16 +157,6 @@
           "source": ""
         },
         {
-          "const": "True",
-          "description": "There is a family history of consanguinity",
-          "source": ""
-        },
-        {
-          "const": "False",
-          "description": "There is no family history of consanguinity",
-          "source": ""
-        },
-        {
           "const": "Unknown",
           "description": "Unknown whether there is a family history of consanguinity",
           "source": ""
@@ -207,16 +177,6 @@
         },
         {
           "const": false,
-          "description": "The individual was not born via C-section",
-          "source": ""
-        },
-        {
-          "const": "True",
-          "description": "The individual was born via C-section",
-          "source": ""
-        },
-        {
-          "const": "False",
           "description": "The individual was not born via C-section",
           "source": ""
         },
@@ -270,12 +230,12 @@
       "description": "Is dementia present",
       "anyOf": [
         {
-          "const": "True",
+          "const": true,
           "description": "Dementia is present",
           "source": ""
         },
         {
-          "const": "False",
+          "const": false,
           "description": "Dementia is not present",
           "source": ""
         }
@@ -295,16 +255,6 @@
         },
         {
           "const": false,
-          "description": "There has not been stricturing",
-          "source": ""
-        },
-        {
-          "const": "True",
-          "description": "There has been stricturing",
-          "source": ""
-        },
-        {
-          "const": "False",
           "description": "There has not been stricturing",
           "source": ""
         },
@@ -337,16 +287,6 @@
         },
         {
           "const": false,
-          "description": "There is no family history of the disorder/disease",
-          "source": ""
-        },
-        {
-          "const": "True",
-          "description": "There is a family history of the disorder/disease",
-          "source": ""
-        },
-        {
-          "const": "False",
           "description": "There is no family history of the disorder/disease",
           "source": ""
         },
@@ -412,7 +352,7 @@
     },
     "isogenicReplicate": {
       "description": "Replicates from biosamples derived from the same human donor or model organism strain",
-      "type": "string"
+      "type": "integer"
     },
     "labAssay": {
       "description": "Laboratory assay performed",
@@ -445,16 +385,6 @@
           "source": ""
         },
         {
-          "const": "True",
-          "description": "The mother smoked while pregnant",
-          "source": ""
-        },
-        {
-          "const": "False",
-          "description": "The mother did not smoke while pregnant",
-          "source": ""
-        },
-        {
           "const": "Unknown",
           "description": "Unknown whether the mother smoked while pregnant",
           "source": ""
@@ -479,12 +409,12 @@
       "description": "Is there a medical record toxicology report",
       "anyOf": [
         {
-          "const": "True",
+          "const": true,
           "description": "There is a medical record toxicology report",
           "source": ""
         },
         {
-          "const": "False",
+          "const": false,
           "description": "There is no medical record toxicology report",
           "source": ""
         },
@@ -554,12 +484,12 @@
       "description": "Is PMI certain, i.e. is time of death known",
       "anyOf": [
         {
-          "const": "True",
+          "const": true,
           "description": "PMI is certain",
           "source": ""
         },
         {
-          "const": "False",
+          "const": false,
           "description": "PMI is not certain",
           "source": ""
         },
@@ -584,16 +514,6 @@
           "source": ""
         },
         {
-          "const": "True",
-          "description": "The individual is dead",
-          "source": ""
-        },
-        {
-          "const": "False",
-          "description": "The individual is not dead",
-          "source": ""
-        },
-        {
           "const": "Unknown",
           "description": "Unknown whether the individual is alive or dead",
           "source": ""
@@ -604,12 +524,12 @@
       "description": "Were toxicology tests performed on post-mortem tissue",
       "anyOf": [
         {
-          "const": "True",
+          "const": true,
           "description": "Post-mortem toxicology tests were performed",
           "source": ""
         },
         {
-          "const": "False",
+          "const": false,
           "description": "Post-mortem toxicology tests were not performed",
           "source": ""
         },
@@ -634,16 +554,6 @@
         },
         {
           "const": false,
-          "description": "The individual was not born pre-term",
-          "source": ""
-        },
-        {
-          "const": "True",
-          "description": "The individual was born pre-term",
-          "source": ""
-        },
-        {
-          "const": "False",
           "description": "The individual was not born pre-term",
           "source": ""
         },
@@ -674,13 +584,13 @@
       "description": "Gender as reported by the brain bank",
       "anyOf": [
         {
-          "const": "M",
-          "description": "Male",
+          "const": "female",
+          "description": "Female",
           "source": ""
         },
         {
-          "const": "F",
-          "description": "Female",
+          "const": "male",
+          "description": "Male",
           "source": ""
         },
         {
@@ -718,16 +628,6 @@
           "source": ""
         },
         {
-          "const": "True",
-          "description": "There is a second degree relative with the disease",
-          "source": ""
-        },
-        {
-          "const": "False",
-          "description": "There is not a second degree relative with the disease",
-          "source": ""
-        },
-        {
           "const": "Unknown",
           "description": "Unknown whether there is a second degree relative with the disease",
           "source": ""
@@ -736,7 +636,7 @@
     },
     "sequencingReplicate": {
       "description": "Replicates from the same library sequenced multiple times",
-      "type": "string"
+      "type": "integer"
     },
     "smokePerDay": {
       "description": "Number of cigarettes smoked daily",
@@ -760,8 +660,7 @@
           "const": false,
           "description": "The individual does not have a history of smoking",
           "source": ""
-        },
-        {"type": "null"}
+        }
       ]
     },
     "smokingYears": {
@@ -780,7 +679,7 @@
     },
     "technicalReplicate": {
       "description": "Replicates from the same biosample, treated identically",
-      "type": "string"
+      "type": "integer"
     },
     "totalReads": {
       "description": "Number of reads in the input FASTQ file",
