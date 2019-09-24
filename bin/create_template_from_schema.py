@@ -27,8 +27,6 @@ import csv
 import json
 import jsonref
 import jsonschema
-import os
-import pandas as pd
 
 def main():
 
