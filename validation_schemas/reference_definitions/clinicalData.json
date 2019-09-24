@@ -640,13 +640,8 @@
     },
     "smokePerDay": {
       "description": "Number of cigarettes smoked daily",
-      "anyOf": [
-        {
-          "type": "number",
-          "exclusiveMinimum": 0
-	},
-        {"const": "Not collected"}
-      ]
+      "type": "integer",
+      "exclusiveMinimum": 0
     },
     "smokingHistory": {
       "description": "Does the individual have a history of smoking",
@@ -665,13 +660,8 @@
     },
     "smokingYears": {
       "description": "Number of years the individual has smoked",
-      "anyOf": [
-        {
-          "type": "number",
-          "exclusiveMinimum": 0
-	},
-        {"const": "Not collected"}
-      ]
+      "type": "number",
+      "exclusiveMinimum": 0
     },
     "surgicalHistory": {
       "description": "Type of surgical history",
