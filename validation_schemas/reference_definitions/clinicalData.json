@@ -35,7 +35,7 @@
     },
     "anisogenicReplicate": {
       "description": "Replicates from similar tissue biosamples derived from different human donor or model organism strains",
-      "type": "integer",
+      "type": "integer"
     },
     "biologicalReplicate": {
       "description": "Replicates from distinct biosamples on which the same experimental protocol was performed",
