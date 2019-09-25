@@ -98,7 +98,7 @@ def main():
                     output_row["required"] = "Yes"
 
                 if "pattern" in json_schema["properties"][json_key]:
-                    output_row["rules"] = json_schema["properties"][json_key]["pattern"].replace("^", "Starts with ")
+                    output_row["rules"] = json_schema["properties"][json_key]["pattern"]
 
                 if "anyOf" in json_schema["properties"][json_key]:
                     for anyof_row in json_schema["properties"][json_key]["anyOf"]:
