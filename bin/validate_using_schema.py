@@ -35,6 +35,11 @@ def convert_to_boolean(data_row, val_schema):
 
     for rec_key in data_row:
         if isinstance(data_row[rec_key], str):
+
+            # We only want to convert strings into Booleans if the field has a controlled
+            # values list and has more than one possible type, e.g. True, False, "Unknown".
+            # In that instance, we want to convert a string true/false to a Boolean true/false
+            # while ignoring case (true, TRUE, False, FaLsE, etc.).
             if (rec_key in val_schema["properties"]) and ("anyOf" in val_schema["properties"][rec_key]):
                 converted_row[rec_key] = bool_conversion.get(data_row[rec_key].upper(), data_row[rec_key])
             else:
