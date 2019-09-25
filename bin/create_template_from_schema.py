@@ -43,7 +43,7 @@ def main():
     args = parser.parse_args()
 
     # Define headers for the definitions file in case one is requested.
-    definition_column_headers = ["key", "type", "definition", "possible values", "possible values definitions"]
+    definition_column_headers = ["key", "type", "definition", "required", "possible values", "possible values definitions"]
 
     # Check to see if a reference path has been passed in. If it has, use jsonref to load
     # the validation schema.  If not, it is assumed that all of the keys are defined within
@@ -94,6 +94,9 @@ def main():
                 if "description" in json_schema["properties"][json_key]:
                     output_row["definition"] = json_schema["properties"][json_key]["description"]
 
+                if json_key in json_schema["required"]:
+                    output_row["required"] = "Yes"
+
                 if "anyOf" in json_schema["properties"][json_key]:
                     for anyof_row in json_schema["properties"][json_key]["anyOf"]:
                         if "const" in anyof_row:
@@ -104,9 +107,6 @@ def main():
                                 definitions_writer.writerow(output_row)
                                 output_row = {}
                             else:
-                                output_row["key"] = ""
-                                output_row["type"] = ""
-                                output_row["definition"] = ""
                                 output_row["possible values"] = anyof_row["const"]
                                 if "description" in anyof_row:
                                     output_row["possible values definitions"] = anyof_row["description"]
