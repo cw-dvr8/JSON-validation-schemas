@@ -28,14 +28,17 @@ from jsonschema import validate
 import os
 import pandas as pd
 
-def convert_to_boolean(data_row):
+def convert_to_boolean(data_row, val_schema):
 
     bool_conversion = {"TRUE": True, "FALSE": False}
     converted_row = dict()
 
     for rec_key in data_row:
         if isinstance(data_row[rec_key], str):
-            converted_row[rec_key] = bool_conversion.get(data_row[rec_key].upper(), data_row[rec_key])
+            if (rec_key in val_schema["properties"]) and ("anyOf" in val_schema["properties"][rec_key]):
+                converted_row[rec_key] = bool_conversion.get(data_row[rec_key].upper(), data_row[rec_key])
+            else:
+                converted_row[rec_key] = data_row[rec_key]
         else:
             converted_row[rec_key] = data_row[rec_key]
 
@@ -50,7 +53,7 @@ def validate_object(json_val_schema, object_to_validate):
     for error in schema_errors:
         # If the first value in the relative_schema_path deque is "properties", the
         # second value is going to be the name of the column that is in error.
-        if error.relative_schema_path[0].upper() == "PROPERTIES":
+        if error.relative_schema_path[0] == "properties":
             print(f"{error.relative_schema_path[1]}: {error.message}")
         else:
             print(f"{error.message}")
@@ -73,11 +76,7 @@ def main():
     # Check to see if a reference path has been passed in. If it has, use jsonref to load
     # the validation schema.  If not, use the json module.
     if args.reference_path is not None:
-        if not (os.path.isdir(args.reference_path)):
-            raise Exception(f"Reference directory: {args.reference_path} is not a valid directory")
-
-        ref_uri = f"file://{args.reference_path}/"
-        json_schema = jsonref.load(args.json_schema_file, base_uri=ref_uri, jsonschema=True)
+        json_schema = jsonref.load(args.json_schema_file, base_uri=args.reference_path, jsonschema=True)
 
     else:
         json_schema = json.load(args.json_schema_file)
@@ -98,8 +97,9 @@ def main():
             # JSON validation schema.
             clean_record = {k: data_record[k] for k in data_record if data_record[k] is not None}
 
-            # Convert string true/false values to Boolean true/false values.
-            converted_clean_record = convert_to_boolean(clean_record)
+            # Convert string true/false values to Boolean true/false values only if the JSON key
+            # is not strictly defined as a string column.
+            converted_clean_record = convert_to_boolean(clean_record, json_schema)
 
             validate_object(json_schema, converted_clean_record)
     
