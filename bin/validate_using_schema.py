@@ -28,8 +28,6 @@ import argparse
 import json
 import jsonref
 import jsonschema
-from jsonschema import validate
-import os
 import pandas as pd
 
 def convert_to_boolean(data_row, val_schema):
@@ -37,19 +35,40 @@ def convert_to_boolean(data_row, val_schema):
     bool_conversion = {"TRUE": True, "FALSE": False}
     converted_row = dict()
 
+    # We only want to convert strings into Booleans if the field has a controlled
+    # values list and has more than one possible type, e.g. True, False, "Unknown".
+    # In that instance, we want to convert a string true/false to a Boolean true/false
+    # while ignoring case (true, TRUE, False, FaLsE, etc.).
     for rec_key in data_row:
-        if isinstance(data_row[rec_key], str):
-
-            # We only want to convert strings into Booleans if the field has a controlled
-            # values list and has more than one possible type, e.g. True, False, "Unknown".
-            # In that instance, we want to convert a string true/false to a Boolean true/false
-            # while ignoring case (true, TRUE, False, FaLsE, etc.).
-            if (rec_key in val_schema["properties"]) and ("anyOf" in val_schema["properties"][rec_key]):
-                converted_row[rec_key] = bool_conversion.get(data_row[rec_key].upper(), data_row[rec_key])
-            else:
-                converted_row[rec_key] = data_row[rec_key]
-        else:
+            
+        # Pass the row through if:
+        # a) the key is not in the schema, i.e. the site put extra columns in the file;
+        # b) the value is not a string;
+        # c) the value is a string but there are no other alternative types/values for it in the schema
+        if ((rec_key not in val_schema["properties"]) or
+            (not(isinstance(data_row[rec_key], str))) or
+            ((isinstance(data_row[rec_key], str)) and ("anyOf" not in val_schema["properties"][rec_key]))):
             converted_row[rec_key] = data_row[rec_key]
+
+        else:
+            # If it is possible for the key to contain a number and the string value is some sort of number,
+            # convert the string into a number.
+            number_is_possible = False
+            for schema_anyof in val_schema["properties"][rec_key]["anyOf"]:
+                if ("type" in schema_anyof) and (schema_anyof["type"] in ["integer", "number"]):
+                    number_is_possible = True
+                    break
+
+            if number_is_possible:
+                if data_row[rec_key].isnumeric():
+                    converted_row[rec_key] = int(data_row[rec_key])
+                elif data_row[rec_key].replace(".", "", 1).isnumeric():
+                    converted_row[rec_key] = float(data_row[rec_key])
+                else:
+                    converted_row[rec_key] = bool_conversion.get(data_row[rec_key].upper(), data_row[rec_key])
+
+            else:
+                converted_row[rec_key] = bool_conversion.get(data_row[rec_key].upper(), data_row[rec_key])
 
     return converted_row
 
