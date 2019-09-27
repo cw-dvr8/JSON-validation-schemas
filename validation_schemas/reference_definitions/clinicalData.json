@@ -4,9 +4,18 @@
   "definitions":{
     "ageDxYears": {
       "description": "Age in years at diagnosis",
-      "type": "number",
-      "minimum": 0,
-      "maximum": 90
+      "anyOf": [
+        {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 90
+        },
+	{
+          "const": "Unknown",
+          "description": "Age at diagnosis is unknown",
+          "source": ""
+        }
+      ]
     },
     "ageOnset": {
       "description": "Age in years of first symptoms",
