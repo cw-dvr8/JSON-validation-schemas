@@ -33,14 +33,6 @@
         }
       ]
     },
-    "anisogenicReplicate": {
-      "description": "Replicates from similar tissue biosamples derived from different human donor or model organism strains",
-      "type": "integer"
-    },
-    "biologicalReplicate": {
-      "description": "Replicates from distinct biosamples on which the same experimental protocol was performed",
-      "type": "integer"
-    },
     "BMI": {
       "description": "Body Mass Index",
       "type": "integer",
@@ -312,11 +304,6 @@
         }
       ]
     },
-    "FRiP": {
-      "description": "Fraction of all mapped reads that fall into the called peak regions (Fraction of reads in peaks)",
-      "type": "number",
-      "exclusiveMinimum": 0
-    },
     "geneticMutation": {
       "description": "Genetic mutation, if known",
       "type": "string"
@@ -346,10 +333,6 @@
       "minimum": 0,
       "maximum": 170
     },
-    "investigatorName": {
-      "description": "Investigator name",
-      "type": "string"
-    },
     "isogenicReplicate": {
       "description": "Replicates from biosamples derived from the same human donor or model organism strain",
       "type": "integer"
@@ -361,15 +344,6 @@
     "labAssayResult": {
       "description": "Laboratory assay result",
       "type": "string"
-    },
-    "libraryID": {
-      "description": "Library ID as provided by lab",
-      "type": "string"
-    },
-    "mappedReads": {
-      "description": "Number of uniquely mapped PE reads",
-      "type": "integer",
-      "exclusiveMinimum": 0
     },
     "maternalSmokingHistory": {
       "description": "Did the mother smoke while pregnant",
@@ -390,16 +364,6 @@
           "source": ""
         }
       ]
-    },
-    "meanCoverage": {
-      "description": "Total number of bases covered by ATAC-seq reads/size of genome",
-      "type": "number",
-      "exclusiveMinimum": 0
-    },
-    "meanGCContent": {
-      "description": "Mean GC content per sample",
-      "type": "number",
-      "exclusiveMinimum": 0
     },
     "medicationAtDx": {
       "description": "Medication prescribed at diagnosis",
@@ -429,16 +393,6 @@
       "description": "Description of neuropathology",
       "type": "string"
     },
-    "organRIN": {
-      "description": "Organ RIN, as previously measured on organ or region",
-      "type": "number",
-      "exclusiveMinimum": 0
-    },
-    "organWeight": {
-      "description": "Post-mortem weight of organ (in grams)",
-      "type": "number",
-      "exclusiveMinimum": 0
-    },
     "otherDiagnosis": {
       "description": "Secondary diagnosis",
       "type": "string"
@@ -455,16 +409,6 @@
       "description": "Subgroup of other medical diagnosis (DSM 5 or ICD 10 code)",
       "type": "string"
     },
-    "passage": {
-      "description": "Number of times a cell culture has been subcultured",
-      "type": "integer",
-      "minimum": 0
-    },
-    "percentAligned": {
-      "description": "Percent of reads aligned to genome reference",
-      "type": "number",
-      "exclusiveMinimum": 0
-    },
     "perianalInvolvement": {
       "description": "Is there perianal involvement",
       "anyOf": [
@@ -476,26 +420,6 @@
         {
           "const": false,
           "description": "There is no perianal involvement",
-          "source": ""
-        }
-      ]
-    },
-    "PMICertain": {
-      "description": "Is PMI certain, i.e. is time of death known",
-      "anyOf": [
-        {
-          "const": true,
-          "description": "PMI is certain",
-          "source": ""
-        },
-        {
-          "const": false,
-          "description": "PMI is not certain",
-          "source": ""
-        },
-        {
-          "const": "Unknown",
-          "description": "Unknown whether PMI is certain",
           "source": ""
         }
       ]
@@ -600,20 +524,6 @@
         }
       ]
     },
-    "reprogrammedCellType": {
-      "description": "Cell type specimen is modeling",
-      "type": "string"
-    },
-    "RIN": {
-      "description": "RNA Integrity Number",
-      "type": "number",
-      "exclusiveMinimum": 0
-    },
-    "rRNARate": {
-      "description": "Ribosomal RNA alignment rate",
-      "type": "number",
-      "exclusiveMinimum": 0
-    },
     "secondDegree": {
       "description": "Is there a second degree relative with the disease",
       "anyOf": [
@@ -633,10 +543,6 @@
           "source": ""
         }
       ]
-    },
-    "sequencingReplicate": {
-      "description": "Replicates from the same library sequenced multiple times",
-      "type": "integer"
     },
     "smokePerDay": {
       "description": "Number of cigarettes smoked daily",
@@ -666,15 +572,6 @@
     "surgicalHistory": {
       "description": "Type of surgical history",
       "type": "string"
-    },
-    "technicalReplicate": {
-      "description": "Replicates from the same biosample, treated identically",
-      "type": "integer"
-    },
-    "totalReads": {
-      "description": "Number of reads in the input FASTQ file",
-      "type": "integer",
-      "exclusiveMinimum": 0
     },
     "yearAutopsy": {
       "description": "Year autopsy was performed",
