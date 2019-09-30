@@ -1479,11 +1479,6 @@
         }
       ]
     },
-    "sexChromosome": {
-      "description": "SNP genotype",
-      "type": "string",
-      "maxLength": 3
-    },
     "cellLine": {
       "description": "Identifying string linked to a particular cell line",
       "type": "string"
@@ -1604,9 +1599,19 @@
       "type": "integer",
       "exclusiveMinimum": 0
     },
+    "rnaBatch": {
+      "description": "Batch RNA was isolated in",
+      "type": "string"
+    }
+  },
     "sequencingBatch": {
       "description": "Batch library was sequenced in",
       "type": "string"
+    },
+    "sexChromosome": {
+      "description": "SNP genotype",
+      "type": "string",
+      "maxLength": 3
     },
     "transposaseBatch": {
       "description": "Transposition reaction batch",
