@@ -35,8 +35,8 @@
     "postmortem": {
       "$ref": "clinicalData.json#/definitions/postmortem"
     },
-    "sex": {
-      "$ref": "experimentalData.json#/definitions/sex"
+    "sexChromosome": {
+      "$ref": "experimentalData.json#/definitions/sexChromosome"
     },
     "race": {
       "$ref": "clinicalData.json#/definitions/race"
@@ -187,6 +187,30 @@
     },
     "libraryPreparationMethod": {
       "$ref": "ngs.json#/definitions/libraryPreparationMethod"
+    },
+    "libraryBatch": {
+      "$ref": "experimentalData.json#/definitions/libraryBatch"
+    },
+    "sequencingBatch": {
+      "$ref": "experimentalData.json#/definitions/sequencingBatch"
+    },
+    "transposaseBatch": {
+      "$ref": "experimentalData.json#/definitions/transposaseBatch"
+    },
+    "pcrCycles": {
+      "$ref": "experimentalData.json#/definitions/pcrCycles"
+    },
+    "histoneAntibody": {
+      "$ref": "experimentalData.json#/definitions/histoneAntibody"
+    },
+    "antibodyAmount": {
+      "$ref": "experimentalData.json#/definitions/antibodyAmount"
+    },
+    "chromatinAmount": {
+      "$ref": "experimentalData.json#/definitions/chromatinAmount"
+    },
+    "alignmentMethod": {
+      "$ref": "analysis.json#/definitions/alignmentMethod"
     },
     "fileFormat": {
       "$ref": "sageCommunity.json#/definitions/fileFormat"
