@@ -17,6 +17,15 @@
         }
       ]
     },
+    "ageOfDeath": {
+      "description": "Age of death",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "ageOfDeathUnits": {
+      "description": "The death age unit of measure (gestational week or year)",
+      "type": "string"
+    },
     "ageOnset": {
       "description": "Age in years of first symptoms",
       "type": "number",
@@ -105,7 +114,7 @@
         {"type": "null"}
       ]
     },
-    "causeDeath": {
+    "causeOfDeath": {
       "description": "The specific injury or disease that lead to death",
       "type": "string"
     },
@@ -185,45 +194,6 @@
           "const": "Unknown",
           "description": "Unknown whether the individual was born via C-section",
           "source": ""
-        }
-      ]
-    },
-    "deathAge": {
-      "description": "Age of death",
-      "type": "number",
-      "exclusiveMinimum": 0
-    },
-    "deathAgeUnits": {
-      "description": "The death age unit of measure (gestational week or year)",
-      "type": "string"
-    },
-    "deathManner": {
-      "description": "The determination of how the inury or disease lead to death",
-      "anyOf": [
-        {
-          "const": "natural",
-          "description": "",
-          "source": ""
-        },
-        {
-          "const": "accident",
-          "description": "",
-          "source": "https://ncim.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C0000924"
-        },
-        {
-          "const": "suicide",
-          "description": "",
-          "source": "https://ncim.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C0038661"
-        },
-        {
-          "const": "homicide",
-          "description": "",
-          "source": "https://ncim.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C3829672"
-        },
-        {
-          "const": "undetermined",
-          "description": "",
-          "source": "https://ncim.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=CL502663"
         }
       ]
     },
@@ -353,6 +323,36 @@
     "labAssayResult": {
       "description": "Laboratory assay result",
       "type": "string"
+    },
+    "mannerOfDeath": {
+      "description": "The determination of how the inury or disease lead to death",
+      "anyOf": [
+        {
+          "const": "natural",
+          "description": "",
+          "source": ""
+        },
+        {
+          "const": "accident",
+          "description": "",
+          "source": "https://ncim.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C0000924"
+        },
+        {
+          "const": "suicide",
+          "description": "",
+          "source": "https://ncim.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C0038661"
+        },
+        {
+          "const": "homicide",
+          "description": "",
+          "source": "https://ncim.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C3829672"
+        },
+        {
+          "const": "undetermined",
+          "description": "",
+          "source": "https://ncim.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=CL502663"
+        }
+      ]
     },
     "maternalSmokingHistory": {
       "description": "Did the mother smoke while pregnant",
