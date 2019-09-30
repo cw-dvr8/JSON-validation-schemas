@@ -1479,6 +1479,11 @@
         }
       ]
     },
+    "sexChromosome": {
+      "description": "SNP genotype",
+      "type": "string",
+      "maxLength": 3
+    },
     "cellLine": {
       "description": "Identifying string linked to a particular cell line",
       "type": "string"
