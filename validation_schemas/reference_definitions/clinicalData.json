@@ -68,12 +68,12 @@
         },
         {
           "const": 2,
-          "description": "Moderate",
+          "description": "",
           "source": ""
         },
         {
           "const": 3,
-          "description": "Severe",
+          "description": "",
           "source": ""
         },
         {
@@ -83,12 +83,12 @@
         },
         {
           "const": 5,
-          "description": "Moderate",
+          "description": "",
           "source": ""
         },
         {
           "const": 6,
-          "description": "Severe",
+          "description": "",
           "source": ""
         }
       ]
