@@ -1602,8 +1602,7 @@
     "rnaBatch": {
       "description": "Batch RNA was isolated in",
       "type": "string"
-    }
-  },
+    },
     "sequencingBatch": {
       "description": "Batch library was sequenced in",
       "type": "string"
