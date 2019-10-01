@@ -6,256 +6,259 @@
   "type": "object",
   "properties": {
     "consortium": {
-      "$ref": "sageCommunity.json#/definitions/consortium"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/sageCommunity.json#/definitions/consortium"
     },
     "grant": {
-      "$ref": "neuro.json#/definitions/grant"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/neuro.json#/definitions/grant"
     },
     "study": {
-      "$ref": "neuro.json#/definitions/study"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/neuro.json#/definitions/study"
     },
     "group": {
-      "$ref": "sageCommunity.json#/definitions/group"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/sageCommunity.json#/definitions/group"
     },
     "investigatorName": {
-      "$ref": "clinicalData.json#/definitions/investigatorName"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/sageCommunity.json#/definitions/investigatorName"
     },
     "individualID": {
-      "$ref": "experimentalData.json#/definitions/individualID"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/individualID"
     },
     "individualIdSource": {
-      "$ref": "experimentalData.json#/definitions/individualIdSource"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/individualIdSource"
     },
     "species": {
-      "$ref": "experimentalData.json#/definitions/species"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/species"
     },
     "reportedGender": {
-      "$ref": "clinicalData.json#/definitions/reportedGender"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/reportedGender"
     },
     "postmortem": {
-      "$ref": "clinicalData.json#/definitions/postmortem"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/postmortem"
     },
     "sexChromosome": {
-      "$ref": "experimentalData.json#/definitions/sexChromosome"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/sexChromosome"
     },
     "race": {
-      "$ref": "clinicalData.json#/definitions/race"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/race"
     },
     "raceDetail": {
-      "$ref": "clinicalData.json#/definitions/raceDetail"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/raceDetail"
     },
     "genotypeInferredAncestry": {
-      "$ref": "clinicalData.json#/definitions/genotypeInferredAncestry"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/genotypeInferredAncestry"
     },
     "IQ": {
-      "$ref": "clinicalData.json#/definitions/IQ"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/IQ"
     },
     "BMI": {
-      "$ref": "clinicalData.json#/definitions/BMI"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/BMI"
     },
     "primaryDiagnosis": {
-      "$ref": "clinicalData.json#/definitions/primaryDiagnosis"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/primaryDiagnosis"
     },
     "primaryDiagnosisDetail": {
-      "$ref": "clinicalData.json#/definitions/primaryDiagnosisDetail"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/primaryDiagnosisDetail"
     },
     "otherDiagnosis": {
-      "$ref": "clinicalData.json#/definitions/otherDiagnosis"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/otherDiagnosis"
     },
     "otherDiagnosisDetail": {
-      "$ref": "clinicalData.json#/definitions/otherDiagnosisDetail"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/otherDiagnosisDetail"
     },
     "familyHistory": {
-      "$ref": "clinicalData.json#/definitions/familyHistory"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/familyHistory"
     },
     "ageOnset": {
-      "$ref": "clinicalData.json#/definitions/ageOnset"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/ageOnset"
     },
     "neuropathDescription" : {
-      "$ref": "clinicalData.json#/definitions/neuropathDescription"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/neuropathDescription"
     },
     "dementia": {
-      "$ref": "clinicalData.json#/definitions/dementia"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/dementia"
     },
     "CDR": {
-      "$ref": "clinicalData.json#/definitions/CDR"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/CDR"
     },
     "braak": {
-      "$ref": "clinicalData.json#/definitions/braak"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/braak"
     },
     "otherMedicalDx": {
-      "$ref": "clinicalData.json#/definitions/otherMedicalDx"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/otherMedicalDx"
     },
     "otherMedicalDetail": {
-      "$ref": "clinicalData.json#/definitions/otherMedicalDetail"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/otherMedicalDetail"
     },
-    "deathAge": {
-      "$ref": "clinicalData.json#/definitions/deathAge"
+    "ageOfDeath": {
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/ageOfDeath"
     },
-    "deathAgeUnits": {
-      "$ref": "clinicalData.json#/definitions/deathAgeUnits"
+    "ageOfDeathUnits": {
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/ageOfDeathUnits"
     },
-    "causeDeath": {
-      "$ref": "clinicalData.json#/definitions/causeDeath"
+    "causeOfDeath": {
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/causeOfDeath"
     },
-    "deathManner": {
-      "$ref": "clinicalData.json#/definitions/deathManner"
+    "mannerOfDeath": {
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/mannerOfDeath"
     },
     "postmortemTox": {
-      "$ref": "clinicalData.json#/definitions/postmortemTox"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/postmortemTox"
     },
     "postmortemToxSource": {
-      "$ref": "clinicalData.json#/definitions/postmortemToxSource"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/postmortemToxSource"
     },
     "medRecordTox": {
-      "$ref": "clinicalData.json#/definitions/medRecordTox"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/medRecordTox"
     },
     "organ": {
-      "$ref": "experimentalData.json#/definitions/organ"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/organ"
     },
     "PMICertain": {
-      "$ref": "clinicalData.json#/definitions/PMICertain"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/neuro.json#/definitions/PMICertain"
     },
     "PMI": {
-      "$ref": "neuro.json#/definitions/PMI"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/neuro.json#/definitions/PMI"
     },
     "pH": {
-      "$ref": "neuro.json#/definitions/pH"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/neuro.json#/definitions/pH"
     },
     "organWeight": {
-      "$ref": "clinicalData.json#/definitions/organWeight"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/organWeight"
     },
     "organRIN": {
-      "$ref": "clinicalData.json#/definitions/organRIN"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/organRIN"
     },
     "yearAutopsy": {
-      "$ref": "clinicalData.json#/definitions/yearAutopsy"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/yearAutopsy"
     },
     "specimenID": {
-      "$ref": "experimentalData.json#/definitions/specimenID"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/specimenID"
     },
     "tissue": {
-      "$ref": "experimentalData.json#/definitions/tissue"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/tissue"
     },
     "cellType": {
-      "$ref": "experimentalData.json#/definitions/cellType"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/cellType"
     },
     "nucleicAcidSource": {
-      "$ref": "ngs.json#/definitions/nucleicAcidSource"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/nucleicAcidSource"
     },
     "BrodmannArea": {
-      "$ref": "neuro.json#/definitions/BrodmannArea"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/neuro.json#/definitions/BrodmannArea"
     },
     "reprogrammedCellType": {
-      "$ref": "clinicalData.json#/definitions/reprogrammedCellType"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/reprogrammedCellType"
     },
     "terminalDifferentiationPoint": {
-      "$ref": "experimentalData.json#/definitions/terminalDifferentiationPoint"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/terminalDifferentiationPoint"
     },
     "passage": {
-      "$ref": "clinicalData.json#/definitions/passage"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/passage"
     },
     "assay": {
-      "$ref": "experimentalData.json#/definitions/assay"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/assay"
     },
     "assayTarget": {
-       "$ref": "experimentalData.json#/definitions/assayTarget"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/assayTarget"
     },
     "libraryID": {
-      "$ref": "clinicalData.json#/definitions/libraryID"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/libraryID"
     },
     "isStranded": {
-      "$ref": "ngs.json#/definitions/isStranded"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/isStranded"
     },
     "RIN": {
-      "$ref": "clinicalData.json#/definitions/RIN"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/RIN"
     },
     "readStrandOrigin": {
-      "$ref": "ngs.json#/definitions/readStrandOrigin"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/readStrandOrigin"
     },
     "readLength": {
-      "$ref": "ngs.json#/definitions/readLength"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/readLength"
     },
     "platform": {
-      "$ref": "experimentalData.json#/definitions/platform"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/platform"
     },
     "runType": {
-      "$ref": "ngs.json#/definitions/runType"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/runType"
     },
     "libraryPrep": {
-      "$ref": "ngs.json#/definitions/libraryPrep"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/libraryPrep"
     },
     "libraryPreparationMethod": {
-      "$ref": "ngs.json#/definitions/libraryPreparationMethod"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/libraryPreparationMethod"
+    },
+    "rnaBatch": {
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/rnaBatch"
     },
     "libraryBatch": {
-      "$ref": "experimentalData.json#/definitions/libraryBatch"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/libraryBatch"
     },
     "sequencingBatch": {
-      "$ref": "experimentalData.json#/definitions/sequencingBatch"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/sequencingBatch"
     },
     "transposaseBatch": {
-      "$ref": "experimentalData.json#/definitions/transposaseBatch"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/transposaseBatch"
     },
     "pcrCycles": {
-      "$ref": "experimentalData.json#/definitions/pcrCycles"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/pcrCycles"
     },
     "histoneAntibody": {
-      "$ref": "experimentalData.json#/definitions/histoneAntibody"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/histoneAntibody"
     },
     "antibodyAmount": {
-      "$ref": "experimentalData.json#/definitions/antibodyAmount"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/antibodyAmount"
     },
     "chromatinAmount": {
-      "$ref": "experimentalData.json#/definitions/chromatinAmount"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/chromatinAmount"
     },
     "alignmentMethod": {
-      "$ref": "analysis.json#/definitions/alignmentMethod"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/analysis.json#/definitions/alignmentMethod"
     },
     "fileFormat": {
-      "$ref": "sageCommunity.json#/definitions/fileFormat"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/sageCommunity.json#/definitions/fileFormat"
     },
     "referenceSet": {
-      "$ref": "curatedData.json#/definitions/referenceSet"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/curatedData.json#/definitions/referenceSet"
     },
     "readPair": {
-      "$ref": "ngs.json#/definitions/readPair"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/readPair"
     },
     "rRNARate": {
-      "$ref": "clinicalData.json#/definitions/rRNARate"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/analysis.json#/definitions/rRNARate"
     },
     "meanCoverage": {
-      "$ref": "clinicalData.json#/definitions/meanCoverage"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/analysis.json#/definitions/meanCoverage"
     },
     "meanGCContent": {
-      "$ref": "clinicalData.json#/definitions/meanGCContent"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/analysis.json#/definitions/meanGCContent"
     },
     "percentAligned": {
-      "$ref": "clinicalData.json#/definitions/percentAligned"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/analysis.json#/definitions/percentAligned"
     },
     "totalReads": {
-      "$ref": "clinicalData.json#/definitions/totalReads"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/analysis.json#/definitions/totalReads"
     },
     "mappedReads": {
-      "$ref": "clinicalData.json#/definitions/mappedReads"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/analysis.json#/definitions/mappedReads"
     },
     "FRiP": {
-      "$ref": "clinicalData.json#/definitions/FRiP"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/analysis.json#/definitions/FRiP"
     },
     "biologicalReplicate": {
-      "$ref": "clinicalData.json#/definitions/biologicalReplicate"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/analysis.json#/definitions/biologicalReplicate"
     },
     "isogenicReplicate": {
-      "$ref": "clinicalData.json#/definitions/isogenicReplicate"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/analysis.json#/definitions/isogenicReplicate"
     },
     "anisogenicReplicate": {
-      "$ref": "clinicalData.json#/definitions/anisogenicReplicate"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/analysis.json#/definitions/anisogenicReplicate"
     },
     "technicalReplicate": {
-      "$ref": "clinicalData.json#/definitions/technicalReplicate"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/analysis.json#/definitions/technicalReplicate"
     },
     "sequencingReplicate": {
-      "$ref": "clinicalData.json#/definitions/sequencingReplicate"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/analysis.json#/definitions/sequencingReplicate"
     }
   },
   "required": [
