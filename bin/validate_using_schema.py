@@ -135,7 +135,7 @@ def main():
         val_json_obj = json.load(args.validation_obj_file)
 
         # Convert string true/false values to Boolean true/false values.
-        converted_val_json_obj = convert_to_boolean(val_json_obj)
+        converted_val_json_obj = convert_to_boolean(val_json_obj, json_schema)
 
         validate_object(json_schema, converted_val_json_obj)
 
