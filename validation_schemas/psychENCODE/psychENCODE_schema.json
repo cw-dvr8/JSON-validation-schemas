@@ -308,7 +308,7 @@
         }
       },
       "then": {
-        "required": ["sex", "race", "raceDetail", "genotypeInferredAncestry", "IQ", "BMI",
+        "required": ["sexChromosome", "race", "raceDetail", "genotypeInferredAncestry", "IQ", "BMI",
                      "primaryDiagnosis", "primaryDiagnosisDetail", "otherDiagnosis", "familyHistory",
                      "ageOnset", "neuropathDescription", "dementia", "otherMedicalDx"]
       }
