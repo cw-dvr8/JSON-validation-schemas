@@ -434,21 +434,21 @@
       ]
     },
     "postmortem": {
-      "description": "Is the individual dead",
+      "description": "Was tissue biopsied or sampled after death",
       "anyOf": [
         {
           "const": true,
-          "description": "The individual is dead",
+          "description": "The tissue was biopsied or sampled post mortem",
           "source": ""
         },
         {
           "const": false,
-          "description": "The individual is not dead",
+          "description": "The tissue was not biopsied or sampled post mortem",
           "source": ""
         },
         {
           "const": "Unknown",
-          "description": "Unknown whether the individual is alive or dead",
+          "description": "Unknown whether the tissue was biopsied or sampled post mortem",
           "source": ""
         }
       ]
