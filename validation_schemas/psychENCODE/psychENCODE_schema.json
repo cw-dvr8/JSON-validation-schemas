@@ -200,21 +200,6 @@
     "transposaseBatch": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/transposaseBatch"
     },
-    "totalReads": {
-      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/totalReads"
-    },
-    "validBarcodeReads": {
-      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/validBarcodeReads"
-    },
-    "numberCells": {
-      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/numberCells"
-    },
-    "medianGenes": {
-      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/medianGenes"
-    },
-    "medianUMIs": {
-      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/medianUMIs"
-    },
     "pcrCycles": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/pcrCycles"
     },
@@ -376,11 +361,11 @@
               "species": {
                 "const": "Human"
               },
-	      "otherMedicalDx": {
+              "otherMedicalDx": {
                 "not": {"const": "None"}
               }
             },
-	    "required": ["otherMedicalDx"]
+            "required": ["otherMedicalDx"]
           }
         ]
       },
