@@ -1608,7 +1608,7 @@
       "type": "string"
     },
     "sexChromosome": {
-      "description": "Sex identified by SNP genotype",
+      "description": "SNP genotype",
       "type": "string",
       "maxLength": 3
     },
