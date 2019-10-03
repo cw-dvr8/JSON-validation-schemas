@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id":"http://example.com/psychENCODE_schema.json",
-  "title": "annotations",
-  "description": "Validates PsychENCODE file annotations",
+  "title": "PsychENCODE Metadata Schema",
+  "description": "Validates PsychENCODE metadata",
   "type": "object",
   "properties": {
     "consortium": {
