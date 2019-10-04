@@ -215,6 +215,21 @@
     "alignmentMethod": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/analysis.json#/definitions/alignmentMethod"
     },
+    "totalReads": {
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/totalReads"
+    },
+    "validBarcodeReads": {
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/validBarcodeReads"
+    },
+    "numberCells": {
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/numberCells"
+    },
+    "medianGenes": {
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/medianGenes"
+    },
+    "medianUMIs": {
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/medianUMIs"
+    },
     "fileFormat": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/sageCommunity.json#/definitions/fileFormat"
     },
@@ -428,6 +443,37 @@
       },
       "then": {
         "required": ["assayTarget", "FRiP"]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "assay": {
+            "const": "rnaSeq"
+          }
+        }
+      },
+      "then": {
+        "required": ["totalReads", "validBarcodeReads", "numberCells", "medianUMIs"]
+      }
+    },
+    {
+      "if": {
+        "allOf": [
+          {
+            "properties": {
+              "assay": {
+                "const": "rnaSeq"
+              },
+              "platform": {
+                "const": "10x"
+              }
+            }
+          }
+        ]
+      },
+      "then": {
+        "required": ["medianGenes"]
       }
     },
     {
