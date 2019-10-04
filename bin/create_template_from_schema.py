@@ -26,7 +26,6 @@ import argparse
 import csv
 import json
 import jsonref
-import jsonschema
 
 def main():
 
