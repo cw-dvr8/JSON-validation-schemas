@@ -38,6 +38,8 @@ def main():
 
     args = parser.parse_args()
 
+    bool_to_string = {True: "true", False: "false"}
+
     template_workbook = Workbook()
 
     # Check to see if a reference path has been passed in. If it has, use jsonref to load
@@ -101,7 +103,16 @@ def main():
             for anyof_row in json_schema["properties"][json_key]["anyOf"]:
                 if "const" in anyof_row:
                     values_ws.cell(values_row_number, 1).value = json_key
-                    values_ws.cell(values_row_number, 2).value = anyof_row["const"]
+
+                    # If the value is a Boolean, we have to convert it to a string; otherwise
+                    # Excel will force it into all-caps, i.e. (TRUE, FALSE) and this is not
+                    # what we want.
+                    if isinstance(anyof_row["const"], bool):
+                        converted_value = bool_to_string.get(anyof_row["const"], anyof_row["const"])
+                    else:
+                        converted_value = anyof_row["const"]
+                    values_ws.cell(values_row_number, 2).value = converted_value
+
                     if "description" in anyof_row:
                         values_ws.cell(values_row_number, 3).value = anyof_row["description"]
                     if "source" in anyof_row:
