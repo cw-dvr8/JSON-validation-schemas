@@ -4,18 +4,7 @@
   "definitions":{
     "ageDxYears": {
       "description": "Age in years at diagnosis",
-      "anyOf": [
-        {
-          "type": "number",
-          "minimum": 0,
-          "maximum": 90
-        },
-	{
-          "const": "Unknown",
-          "description": "Age at diagnosis is unknown",
-          "source": ""
-        }
-      ]
+      "type": "string"
     },
     "ageOfDeath": {
       "description": "Age of death",
@@ -33,14 +22,15 @@
     },
     "ancestryJewish": {
       "description": "Does the individual have Jewish ancestry",
+      "type": "string",
       "anyOf": [
         {
-          "const": true,
+          "const": "true",
           "description": "The individual has Jewish ancestry",
           "source": ""
         },
         {
-          "const": false,
+          "const": "false",
           "description": "The individual does not have Jewish ancestry",
           "source": ""
         },
@@ -95,14 +85,15 @@
     },
     "breastFed": {
       "description": "Was the individual breastfed",
+      "type": "string",
       "anyOf": [
         {
-          "const": true,
+          "const": "true",
           "description": "The individual was breastfed",
           "source": ""
         },
         {
-          "const": false,
+          "const": "false",
           "description": "The individual was not breastfed",
           "source": ""
         },
@@ -110,8 +101,7 @@
           "const": "Unknown",
           "description": "Unknown whether the individual was breastfed",
           "source": ""
-        },
-        {"type": "null"}
+        }
       ]
     },
     "causeOfDeath": {
@@ -155,14 +145,15 @@
     },
     "consanguinity": {
       "description": "Is there a family history of consanguinity",
+      "type": "string",
       "anyOf": [
         {
-          "const": true,
+          "const": "true",
           "description": "There is a family history of consanguinity",
           "source": ""
         },
         {
-          "const": false,
+          "const": "false",
           "description": "There is no family history of consanguinity",
           "source": ""
         },
@@ -179,14 +170,15 @@
     },
     "Csection": {
       "description": "Was the individual born via C-section",
+      "type": "string",
       "anyOf": [
         {
-          "const": true,
+          "const": "true",
           "description": "The individual was born via C-section",
           "source": ""
         },
         {
-          "const": false,
+          "const": "false",
           "description": "The individual was not born via C-section",
           "source": ""
         },
@@ -199,6 +191,7 @@
     },
     "dementia": {
       "description": "Is dementia present",
+      "type": "boolean",
       "anyOf": [
         {
           "const": true,
@@ -218,14 +211,15 @@
     },
     "diseaseBehaviorStricturing": {
       "description": "Has there been stricturing",
+      "type": "string",
       "anyOf": [
         {
-          "const": true,
+          "const": "true",
           "description": "There has been stricturing",
           "source": ""
         },
         {
-          "const": false,
+          "const": "false",
           "description": "There has not been stricturing",
           "source": ""
         },
@@ -250,14 +244,15 @@
     },
     "familyHistory": {
       "description": "Is there a family history of the disorder/disease",
+      "type": "string",
       "anyOf": [
         {
-          "const": true,
+          "const": "true",
           "description": "There is a family history of the disorder/disease",
           "source": ""
         },
         {
-          "const": false,
+          "const": "false",
           "description": "There is no family history of the disorder/disease",
           "source": ""
         },
@@ -270,6 +265,7 @@
     },
     "firstDegree": {
       "description": "Is there a first degree relative with the disease",
+      "type": "boolean",
       "anyOf": [
         {
           "const": true,
@@ -293,6 +289,7 @@
     },
     "householdSmokingHistory": {
       "description": "Does someone in the household smoke",
+      "type": "boolean",
       "anyOf": [
         {
           "const": true,
@@ -326,6 +323,7 @@
     },
     "mannerOfDeath": {
       "description": "The determination of how the inury or disease lead to death",
+      "type": "string",
       "anyOf": [
         {
           "const": "natural",
@@ -356,14 +354,15 @@
     },
     "maternalSmokingHistory": {
       "description": "Did the mother smoke while pregnant",
+      "type": "string",
       "anyOf": [
         {
-          "const": true,
+          "const": "true",
           "description": "The mother smoked while pregnant",
           "source": ""
         },
         {
-          "const": false,
+          "const": "false",
           "description": "The mother did not smoke while pregnant",
           "source": ""
         },
@@ -380,14 +379,15 @@
     },
     "medRecordTox": {
       "description": "Is there a medical record toxicology report",
+      "type": "string",
       "anyOf": [
         {
-          "const": true,
+          "const": "true",
           "description": "There is a medical record toxicology report",
           "source": ""
         },
         {
-          "const": false,
+          "const": "false",
           "description": "There is no medical record toxicology report",
           "source": ""
         },
@@ -420,6 +420,7 @@
     },
     "perianalInvolvement": {
       "description": "Is there perianal involvement",
+      "type": "boolean",
       "anyOf": [
         {
           "const": true,
@@ -435,14 +436,15 @@
     },
     "postmortem": {
       "description": "Was tissue biopsied or sampled after death",
+      "type": "string",
       "anyOf": [
         {
-          "const": true,
+          "const": "true",
           "description": "The tissue was biopsied or sampled post mortem",
           "source": ""
         },
         {
-          "const": false,
+          "const": "false",
           "description": "The tissue was not biopsied or sampled post mortem",
           "source": ""
         },
@@ -455,14 +457,15 @@
     },
     "postmortemTox": {
       "description": "Were toxicology tests performed on post-mortem tissue",
+      "type": "string",
       "anyOf": [
         {
-          "const": true,
+          "const": "true",
           "description": "Post-mortem toxicology tests were performed",
           "source": ""
         },
         {
-          "const": false,
+          "const": "false",
           "description": "Post-mortem toxicology tests were not performed",
           "source": ""
         },
@@ -479,14 +482,15 @@
     },
     "preTermBirth": {
       "description": "Was the individual born pre-term",
+      "type": "string",
       "anyOf": [
         {
-          "const": true,
+          "const": "true",
           "description": "The individual was born pre-term",
           "source": ""
         },
         {
-          "const": false,
+          "const": "false",
           "description": "The individual was not born pre-term",
           "source": ""
         },
@@ -515,6 +519,7 @@
     },
     "reportedGender": {
       "description": "Gender as reported by the brain bank",
+      "type": "string",
       "anyOf": [
         {
           "const": "female",
@@ -535,14 +540,15 @@
     },
     "secondDegree": {
       "description": "Is there a second degree relative with the disease",
+      "type": "string",
       "anyOf": [
         {
-          "const": true,
+          "const": "true",
           "description": "There is a second degree relative with the disease",
           "source": ""
         },
         {
-          "const": false,
+          "const": "false",
           "description": "There is not a second degree relative with the disease",
           "source": ""
         },
@@ -560,6 +566,7 @@
     },
     "smokingHistory": {
       "description": "Does the individual have a history of smoking",
+      "type": "boolean",
       "anyOf": [
         {
           "const": true,
