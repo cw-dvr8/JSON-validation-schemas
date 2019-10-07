@@ -952,7 +952,7 @@
       ]
     },
     "individualID": {
-      "description": "",
+      "description": "Identifying string linked to the individual or animal being studied",
       "type": "string"
     },
     "platform": {
