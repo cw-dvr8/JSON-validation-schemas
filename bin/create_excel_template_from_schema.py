@@ -116,7 +116,7 @@ def main():
                     if "description" in anyof_row:
                         values_ws.cell(values_row_number, 3).value = anyof_row["description"]
                     if "source" in anyof_row:
-                        values_ws.cell(values_row_number, 3).value = anyof_row["source"]
+                        values_ws.cell(values_row_number, 4).value = anyof_row["source"]
                     values_row_number += 1
 
     template_workbook.save(args.output_file)
