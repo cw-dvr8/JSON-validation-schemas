@@ -357,7 +357,7 @@
                 "const": "Human"
               },
 	      "dementia": {
-                "const": "True"
+                "const": true
               }
             },
             "required": ["dementia"]
