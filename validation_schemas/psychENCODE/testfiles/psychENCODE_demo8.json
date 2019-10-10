@@ -9,7 +9,7 @@
   "species": "Human",
   "reportedGender": "Unknown",
   "postmortem": "true",
-  "sex" : "male",
+  "sexChromosome" : "XY",
   "race": "Caucasian",
   "raceDetail": "Non-Hispanic",
   "genotypeInferredAncestry": "French",
