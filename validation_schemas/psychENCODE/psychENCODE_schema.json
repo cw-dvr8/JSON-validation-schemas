@@ -397,7 +397,7 @@
                 "const": "Human"
               },
               "postmortem": {
-                "const": "True"
+                "const": "true"
               }
             },
 	    "required": ["postmortem"]
@@ -413,7 +413,7 @@
       "if": {
         "properties": {
           "postmortem": {
-            "const": "True"
+            "const": "true"
           }
         }
       },
