@@ -8,7 +8,7 @@
   "individualIdSource": "MSSM",
   "species": "Gallus gallus",
   "reportedGender": "Unknown",
-  "postmortem": "False",
+  "postmortem": "false",
   "organ": "blood",
   "specimenID": "FG-GG-BL-0001",
   "tissue": "blood",
@@ -29,9 +29,9 @@
   "fileFormat": "fastq",
   "referenceSet": "GRCh38",
   "readPair": 2,
-  "biologicalReplicate": "F",
-  "isogenicReplicate": "F",
-  "anisogenicReplicate": "F",
-  "technicalReplicate": "F",
-  "sequencingReplicate": "F"
+  "biologicalReplicate": 1,
+  "isogenicReplicate": 2,
+  "anisogenicReplicate": 1,
+  "technicalReplicate": 2,
+  "sequencingReplicate": 1
 }
