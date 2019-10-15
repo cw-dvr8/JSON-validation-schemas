@@ -271,6 +271,15 @@
     },
     "sequencingReplicate": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/sequencingReplicate"
+    },
+    "path": {
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/sageCommunity.json#/definitions/path"
+    },
+    "parent": {
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/sageCommunity.json#/definitions/parent"
+    },
+    "metadataType": {
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/metadataType"
     }
   },
   "required": [
