@@ -22,6 +22,37 @@
       "description": "Library ID as provided by the lab",
       "type": "string"
     },
+    "metadataType": {
+      "description": "For files of dataSubtype: metadata, a description of the type of metadata in the file.",
+      "type": "string",
+      "anyOf": [
+        {
+          "const": "assay",
+	  "description": "Metadata describing properties of an assay conducted in the study",
+	  "source": "Sage Bionetworks"
+        },
+	{
+          "const": "biospecimen",
+	  "description": "Metadata describing properties of specimens collected and/or analyzed in the study",
+	  "source": "Sage Bionetworks"
+        },
+        {
+          "const": "data dictionary",
+	  "description": "Metadata describing terms or variables that appear in another file",
+	  "source": "Sage Bionetworks"
+        },
+        {
+          "const": "individual",
+	  "description": "Metadata describing properties of individuals (human or animal) represented in the study",
+	  "source": "Sage Bionetworks"
+        },
+        {
+          "const": "protocol",
+	  "description": "A plan specification which has sufficient level of detail and quantitative information to communicate it between investigation agents, so that different investigation agents will reliabley be able to independently reproduce the process",
+	  "source": "http://purl.obolibrary.org/obo/OBI_0000272"
+        }
+      ]
+    },
     "organRIN": {
       "description": "Organ RIN, as previously measured on organ or region",
       "type": "number",
