@@ -474,10 +474,7 @@
       "if": {
         "properties": {
           "assay": {
-            "anyOf": [
-              {"const": "rnaSeq"},
-              {"const": "ATACSeq"}
-            ]
+            "const": "ATACSeq"
           }
         }
       },
