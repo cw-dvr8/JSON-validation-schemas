@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/ngs.json",
+  "definitions": {
+    "validBarcodeReads": {
+      "description": "QC metric",
+      "type": "integer"
+    },
+    "numberCells": {
+      "description": "QC metric",
+      "type": "integer"
+    },
+    "medianGenes": {
+      "description": "QC metric",
+      "type": "integer"
+    },
+    "medianUMIs": {
+      "description": "QC metric",
+      "type": "integer"
+    }
+  }
+}
