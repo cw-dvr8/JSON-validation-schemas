@@ -2,7 +2,43 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://example.com/ngs.json",
   "definitions": {
-    "validBarcodeReads": {
+    "anisogenicReplicate": {
+      "description": "Replicates from similar tissue biosamples derived from different human donor or model organism strains",
+      "type": "integer"
+    },
+    "biologicalReplicate": {
+      "description": "Replicates from distinct biosamples on which the same experimental protocol was performed",
+      "type": "integer"
+    },
+    "FRiP": {
+      "description": "Fraction of all mapped reads that fall into the called peak regions (Fraction of reads in peaks)",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "isogenicReplicate": {
+      "description": "Replicates from biosamples derived from the same human donor or model organism strain",
+      "type": "integer"
+    },
+    "mappedReads": {
+      "description": "Number of uniquely mapped PE reads",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "meanCoverage": {
+      "description": "Total number of bases covered by ATAC-seq reads/size of genome",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "meanGCContents": {
+      "description": "Mean GC contents per sample",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "medianGenes": {
+      "description": "QC metric",
+      "type": "integer"
+    },
+    "medianUMIs": {
       "description": "QC metric",
       "type": "integer"
     },
@@ -10,11 +46,30 @@
       "description": "QC metric",
       "type": "integer"
     },
-    "medianGenes": {
-      "description": "QC metric",
+    "percentAligned": {
+      "description": "Percent of reads aligned to genome reference",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "rRNARate": {
+      "description": "Ribosomal RNA alignment reate",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "sequencingReplicate": {
+      "description": "Replicates from the same library sequenced multiple times",
       "type": "integer"
     },
-    "medianUMIs": {
+    "technicalReplicate": {
+      "description": "Replicates from the same biosample, treated identically",
+      "type": "integer"
+    },
+    "totalReads": {
+      "description": "Number of reads in the input FASTQ file",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "validBarcodeReads": {
       "description": "QC metric",
       "type": "integer"
     }
