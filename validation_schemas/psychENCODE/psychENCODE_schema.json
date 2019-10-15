@@ -257,15 +257,6 @@
     "FRiP": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/FRiP"
     },
-    "biologicalReplicate": {
-      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/biologicalReplicate"
-    },
-    "isogenicReplicate": {
-      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/isogenicReplicate"
-    },
-    "anisogenicReplicate": {
-      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/anisogenicReplicate"
-    },
     "technicalReplicate": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/technicalReplicate"
     },
@@ -313,9 +304,6 @@
     "fileFormat",
     "referenceSet",
     "readPair",
-    "biologicalReplicate",
-    "isogenicReplicate",
-    "anisogenicReplicate",
     "technicalReplicate",
     "sequencingReplicate"
   ],
