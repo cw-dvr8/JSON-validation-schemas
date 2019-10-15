@@ -29,8 +29,8 @@
       "type": "number",
       "exclusiveMinimum": 0
     },
-    "meanGCContents": {
-      "description": "Mean GC contents per sample",
+    "meanGCContent": {
+      "description": "Mean GC content per sample",
       "type": "number",
       "exclusiveMinimum": 0
     },
