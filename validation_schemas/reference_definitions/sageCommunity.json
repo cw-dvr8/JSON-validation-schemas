@@ -5,6 +5,14 @@
     "investigatorName": {
       "description": "Name of the investigator",
       "type": "string"
+    },
+    "parent": {
+      "description": "Synapse ID of the folder to upload to",
+      "type": "string"
+    },
+    "path": {
+      "description": "Directory of the file to be uploaded",
+      "type": "string"
     }
   }
 }
