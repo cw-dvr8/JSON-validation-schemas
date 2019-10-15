@@ -6,13 +6,13 @@
   "type": "object",
   "properties": {
     "individualID": {
-      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/individualID"
+      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/individualID"
     },
     "individualIdSource": {
-      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/individualIdSource"
+      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/individualIdSource"
     },
     "species": {
-      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/species"
+      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/species"
     },
     "reportedGender": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/reportedGender"
@@ -96,16 +96,16 @@
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/medRecordTox"
     },
     "organ": {
-      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/organ"
+      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/organ"
     },
     "PMICertain": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/neuro.json#/definitions/PMICertain"
     },
     "PMI": {
-      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/neuro.json#/definitions/PMI"
+      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/neuro.json#/definitions/PMI"
     },
     "pH": {
-      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/neuro.json#/definitions/pH"
+      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/neuro.json#/definitions/pH"
     },
     "organWeight": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/organWeight"
@@ -169,7 +169,7 @@
                 "const": "Human"
               },
 	      "dementia": {
-                "const": "True"
+                "const": true
               }
             },
             "required": ["dementia"]
@@ -188,11 +188,11 @@
               "species": {
                 "const": "Human"
               },
-	      "otherMedicalDx": {
+              "otherMedicalDx": {
                 "not": {"const": "None"}
               }
             },
-	    "required": ["otherMedicalDx"]
+            "required": ["otherMedicalDx"]
           }
         ]
       },
@@ -209,7 +209,7 @@
                 "const": "Human"
               },
               "postmortem": {
-                "const": "True"
+                "const": "true"
               }
             },
 	    "required": ["postmortem"]
@@ -217,7 +217,7 @@
         ]
       },
       "then": {
-        "required": ["ageOfDeath", "ageOfDeathUnits", "causeOfDeath", "mannerOfDeath", "postmortemTox",
+        "required": ["deathAge", "deathAgeUnits", "causeDeath", "deathManner", "postmortemTox",
 	             "postmortemToxSource", "medRecordTox"]
       }
     },
@@ -225,7 +225,7 @@
       "if": {
         "properties": {
           "postmortem": {
-            "const": "True"
+            "const": "true"
           }
         }
       },
