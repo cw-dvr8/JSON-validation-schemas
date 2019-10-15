@@ -451,7 +451,7 @@
         }
       },
       "then": {
-        "required": ["totalReads", "validBarcodeReads", "numberCells", "medianUMIs"]
+        "required": ["rRNARate", "totalReads", "validBarcodeReads", "numberCells", "medianUMIs"]
       }
     },
     {
@@ -485,7 +485,7 @@
         }
       },
       "then": {
-        "required": ["rRNARate", "meanCoverage", "meanGCContent"]
+        "required": ["meanCoverage", "meanGCContent"]
       }
     },
     {
