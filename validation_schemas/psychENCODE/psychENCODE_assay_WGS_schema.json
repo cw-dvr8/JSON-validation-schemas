@@ -40,18 +40,6 @@
     },
     "totalReads": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/totalReads"
-    },
-    "validBarcodeReads": {
-      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/validBarcodeReads"
-    },
-    "numberCells": {
-      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/numberCells"
-    },
-    "medianGenes": {
-      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/medianGenes"
-    },
-    "medianUMIs": {
-      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/medianUMIs"
     }
   },
   "required": [
@@ -66,30 +54,6 @@
     "libraryPreparationMethod",
     "readLength",
     "runType",
-    "totalReads",
-    "validBarcodeReads",
-    "numberCells",
-    "medianUMIs"
-  ],
-  "allOf": [
-    {
-      "if": {
-        "allOf": [
-          {
-            "properties": {
-              "assay": {
-                "const": "rnaSeq"
-              },
-              "platform": {
-                "const": "10x"
-              }
-            }
-          }
-        ]
-      },
-      "then": {
-        "required": ["medianGenes"]
-      }
-    }
+    "totalReads"
   ]
 }
