@@ -5,11 +5,14 @@
   "description": "Validates PsychENCODE ATAC assay metadata",
   "type": "object",
   "properties": {
-    "assay": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/assay"
-    },
     "specimenID": {
       "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/specimenID"
+    },
+    "libraryID": {
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/libraryID"
+    },
+    "assay": {
+      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/assay"
     },
     "platform": {
       "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/platform"
@@ -52,8 +55,9 @@
     }
   },
   "required": [
-    "assay",
     "specimenID",
+    "libraryID",
+    "assay",
     "platform",
     "transposaseBatch",
     "libraryBatch",

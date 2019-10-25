@@ -5,17 +5,17 @@
   "description": "Validates PsychENCODE RNASeq assay metadata",
   "type": "object",
   "properties": {
-    "assay": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/assay"
-    },
     "specimenID": {
       "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/specimenID"
     },
+    "libraryID": {
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/libraryID"
+    },
+    "assay": {
+      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/assay"
+    },
     "platform": {
       "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/platform"
-    },
-    "RIN": {
-      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/RIN"
     },
     "rnaBatch": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/rnaBatch"
@@ -61,8 +61,9 @@
     }
   },
   "required": [
-    "assay",
     "specimenID",
+    "libraryID",
+    "assay",
     "platform",
     "RIN",
     "rnaBatch",
