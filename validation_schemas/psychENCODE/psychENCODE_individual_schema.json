@@ -95,9 +95,6 @@
     "medRecordTox": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/medRecordTox"
     },
-    "organ": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/organ"
-    },
     "PMICertain": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/neuro.json#/definitions/PMICertain"
     },
@@ -106,12 +103,6 @@
     },
     "pH": {
       "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/neuro.json#/definitions/pH"
-    },
-    "organWeight": {
-      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/organWeight"
-    },
-    "organRIN": {
-      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/organRIN"
     },
     "yearAutopsy": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/yearAutopsy"
@@ -122,8 +113,7 @@
     "individualIdSource",
     "species",
     "reportedGender",
-    "postmortem",
-    "organ"
+    "postmortem"
   ],
   "allOf": [
     {
@@ -230,7 +220,7 @@
         }
       },
       "then": {
-        "required": ["PMICertain", "PMI", "pH", "organWeight", "organRIN", "yearAutopsy"]
+        "required": ["PMICertain", "PMI", "pH", "yearAutopsy"]
       }
     }
   ]
