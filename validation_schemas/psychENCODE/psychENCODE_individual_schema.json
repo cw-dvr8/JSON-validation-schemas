@@ -101,9 +101,6 @@
     "PMI": {
       "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/neuro.json#/definitions/PMI"
     },
-    "pH": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/neuro.json#/definitions/pH"
-    },
     "yearAutopsy": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/yearAutopsy"
     }
@@ -220,7 +217,7 @@
         }
       },
       "then": {
-        "required": ["PMICertain", "PMI", "pH", "yearAutopsy"]
+        "required": ["PMICertain", "PMI", "yearAutopsy"]
       }
     }
   ]
