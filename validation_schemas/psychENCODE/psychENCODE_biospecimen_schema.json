@@ -14,6 +14,15 @@
     "organ": {
       "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/organ"
     },
+    "organWeight": {
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/organWeight"
+    },
+    "organRIN": {
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/organRIN"
+    },
+    "pH": {
+      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/neuro.json#/definitions/pH"
+    },
     "tissue": {
       "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/tissue"
     },
