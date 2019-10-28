@@ -189,6 +189,14 @@
         }
       ]
     },
+    "dateOfBirth": {
+      "description": "Individual date of birth",
+      "type": "string"
+    },
+    "dateOfDeath": {
+      "description": "Individual date of death",
+      "type": "string"
+    },
     "dementia": {
       "description": "Is dementia present",
       "type": "boolean",
