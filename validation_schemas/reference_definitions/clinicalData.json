@@ -35,7 +35,7 @@
           "source": ""
         },
         {
-          "const": "Unknown",
+          "const": "unknown",
           "description": "Unknown whether the individual has Jewish ancestry",
           "source": ""
         }
@@ -98,7 +98,7 @@
           "source": ""
         },
         {
-          "const": "Unknown",
+          "const": "unknown",
           "description": "Unknown whether the individual was breastfed",
           "source": ""
         }
@@ -158,7 +158,7 @@
           "source": ""
         },
         {
-          "const": "Unknown",
+          "const": "unknown",
           "description": "Unknown whether there is a family history of consanguinity",
           "source": ""
         }
@@ -183,7 +183,7 @@
           "source": ""
         },
         {
-          "const": "Unknown",
+          "const": "unknown",
           "description": "Unknown whether the individual was born via C-section",
           "source": ""
         }
@@ -232,7 +232,7 @@
           "source": ""
         },
         {
-          "const": "Unknown",
+          "const": "unknown",
           "description": "Unknown whether there has been stricturing",
           "source": ""
         }
@@ -265,8 +265,8 @@
           "source": ""
         },
         {
-          "const": "Unknown",
-          "description": "It is unknown whether there is a family history of the disorder/disease",
+          "const": "unknown",
+          "description": "Unknown whether there is a family history of the disorder/disease",
           "source": ""
         }
       ]
@@ -317,10 +317,6 @@
       "minimum": 0,
       "maximum": 170
     },
-    "isogenicReplicate": {
-      "description": "Replicates from biosamples derived from the same human donor or model organism strain",
-      "type": "integer"
-    },
     "labAssay": {
       "description": "Laboratory assay performed",
       "type": "string"
@@ -334,9 +330,9 @@
       "type": "string",
       "anyOf": [
         {
-          "const": "natural",
+          "const": "natural causes",
           "description": "",
-          "source": ""
+          "source": "https://ncim.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20Metathesaurus&code=C0277610"
         },
         {
           "const": "accident",
@@ -375,7 +371,7 @@
           "source": ""
         },
         {
-          "const": "Unknown",
+          "const": "unknown",
           "description": "Unknown whether the mother smoked while pregnant",
           "source": ""
         }
@@ -400,7 +396,7 @@
           "source": ""
         },
         {
-          "const": "Unknown",
+          "const": "unknown",
           "description": "Unknown whether there is a medical record toxicology report",
           "source": ""
         }
@@ -457,7 +453,7 @@
           "source": ""
         },
         {
-          "const": "Unknown",
+          "const": "unknown",
           "description": "Unknown whether the tissue was biopsied or sampled post mortem",
           "source": ""
         }
@@ -478,7 +474,7 @@
           "source": ""
         },
         {
-          "const": "Unknown",
+          "const": "unknown",
           "description": "Unknown whether post-mortem toxicology tests were performed",
           "source": ""
         }
@@ -503,7 +499,7 @@
           "source": ""
         },
         {
-          "const": "Unknown",
+          "const": "unknown",
           "description": "Unknown whether the individual was born pre-term",
           "source": ""
         }
@@ -540,7 +536,7 @@
           "source": ""
         },
         {
-          "const": "Unknown",
+          "const": "unknown",
           "description": "Gender is not reported by the brain bank",
           "source": ""
         }
@@ -561,7 +557,7 @@
           "source": ""
         },
         {
-          "const": "Unknown",
+          "const": "unknown",
           "description": "Unknown whether there is a second degree relative with the disease",
           "source": ""
         }
