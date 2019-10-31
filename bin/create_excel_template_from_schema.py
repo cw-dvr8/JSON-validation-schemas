@@ -20,7 +20,7 @@ Execution: create_excel_template_from_schema.py <JSON schema> <output file>
 
 import argparse
 from openpyxl import Workbook
-from schema_tools import convert_bool_to_string, get_schema_properties
+from schema_tools import convert_bool_to_string, get_schema_properties, load_and_deref
 
 def main():
 
@@ -34,7 +34,8 @@ def main():
 
     template_workbook = Workbook()
 
-    definitions, values = get_schema_properties(args.json_schema_file)
+    _, json_schema = load_and_deref(args.json_schema_file)
+    definitions, values = get_schema_properties(json_schema)
 
     # Get the schema keys into a list and then write them to the template worksheet. The 
     # template worksheet will only have one row, but will have multiple columns.
