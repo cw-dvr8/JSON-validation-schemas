@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/neuro.json",
+  "definitions": {
+    "PMICertain": {
+      "description": "Is PMI certain, i.e. is time of death known",
+      "anyOf": [
+        {
+          "const": true,
+          "description": "PMI is certain",
+          "source": ""
+        },
+        {
+          "const": false,
+          "description": "PMI is not certain",
+          "source": ""
+        },
+        {
+          "const": "Unknown",
+          "description": "Unknown whether PMI is certain",
+          "source": ""
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/ngs.json",
+  "definitions": {
+    "FRiP": {
+      "description": "Fraction of all mapped reads that fall into the called peak regions (Fraction of reads in peaks)",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "mappedReads": {
+      "description": "Number of uniquely mapped PE reads",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "meanCoverage": {
+      "description": "Total number of bases covered by ATAC-seq reads/size of genome",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "meanGCContent": {
+      "description": "Mean GC content per sample",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "medianGenes": {
+      "description": "QC metric",
+      "type": "integer"
+    },
+    "medianUMIs": {
+      "description": "QC metric",
+      "type": "integer"
+    },
+    "numberCells": {
+      "description": "QC metric",
+      "type": "integer"
+    },
+    "percentAligned": {
+      "description": "Percent of reads aligned to genome reference",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "rRNARate": {
+      "description": "Ribosomal RNA alignment reate",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "sequencingReplicate": {
+      "description": "Replicates from the same library sequenced multiple times",
+      "type": "integer"
+    },
+    "technicalReplicate": {
+      "description": "Replicates from the same biosample, treated identically",
+      "type": "integer"
+    },
+    "totalReads": {
+      "description": "Number of reads in the input FASTQ file",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "validBarcodeReads": {
+      "description": "QC metric",
+      "type": "integer"
+    }
+  }
+}
