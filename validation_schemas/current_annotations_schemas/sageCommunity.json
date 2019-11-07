@@ -519,6 +519,11 @@
           "const": "dup",
           "description": "output of the Picard MarkDuplicates tool.",
           "source": "https://software.broadinstitute.org/gatk/documentation/tooldocs/4.0.4.0/picard_sam_markduplicates_MarkDuplicates.php"
+        },
+        {
+          "const": "DICOM",
+          "description": "A comprehensive set of standards for communications between medical imaging devices, including handling, storing and transmitting information in medical imaging. It includes a file format definition and a network communication protocol.",
+          "source": "http://purl.obolibrary.org/obo/NCIT_C49059"
         }
       ]
     },
@@ -604,6 +609,31 @@
           "const": "IU-JAX",
           "description": "Group from neuro consortia.",
           "source": "Sage Bionetworks"
+        },
+        {
+          "const": "IU_PTC",
+          "description": "Indiana University pre-clinical testing core -- group from neuro consortia.",
+          "source": "https://model-ad.org/preclinical-testing-core/"
+        },
+        {
+          "const": "Pitt_PTC",
+          "description": "University of Pittsburgh pre-clinical testing core -- group from neuro consortia.",
+          "source": "https://model-ad.org/preclinical-testing-core/"
+        },
+        {
+          "const": "Jax_DMP",
+          "description": "The Jackson Laboratory disease modeling project -- group from neuro consortia.",
+          "source": "https://model-ad.org/disease-modeling-project/"
+        },
+        {
+          "const": "IU_DMP",
+          "description": "Indiana University disease modeling project -- group from neuro consortia.",
+          "source": "https://model-ad.org/disease-modeling-project/"
+        },
+        {
+          "const": "UCI_DMP",
+          "description": "University of California at Irvine disease modeling project -- group from neuro consortia.",
+          "source": "https://model-ad.org/uci-disease-model-development-and-phenotyping-dmp/"
         },
         {
           "const": "Columbia-SUNY",
