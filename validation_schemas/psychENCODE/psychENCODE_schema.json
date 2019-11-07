@@ -15,16 +15,16 @@
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/ageOnset"
     },
     "alignmentMethod": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/analysis.json#/definitions/alignmentMethod"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/analysis.json#/definitions/alignmentMethod"
     },
     "antibodyAmount": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/antibodyAmount"
     },
     "assay": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/assay"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/experimentalData.json#/definitions/assay"
     },
     "assayTarget": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/assayTarget"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/experimentalData.json#/definitions/assayTarget"
     },
     "BMI": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/BMI"
@@ -33,7 +33,7 @@
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/braak"
     },
     "BrodmannArea": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/neuro.json#/definitions/BrodmannArea"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/neuro.json#/definitions/BrodmannArea"
     },
     "causeOfDeath": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/causeOfDeath"
@@ -42,7 +42,7 @@
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/CDR"
     },
     "cellType": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/cellType"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/experimentalData.json#/definitions/cellType"
     },
     "chromatinAmount": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/chromatinAmount"
@@ -70,7 +70,7 @@
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/familyHistory"
     },
     "fileFormat": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/sageCommunity.json#/definitions/fileFormat"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/sageCommunity.json#/definitions/fileFormat"
     },
     "FRiP": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/FRiP"
@@ -189,16 +189,16 @@
       ]
     },
     "group": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/sageCommunity.json#/definitions/group"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/sageCommunity.json#/definitions/group"
     },
     "histoneAntibody": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/histoneAntibody"
     },
     "individualID": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/individualID"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/experimentalData.json#/definitions/individualID"
     },
     "individualIdSource": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/individualIdSource"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/experimentalData.json#/definitions/individualIdSource"
     },
     "investigatorName": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/sageCommunity.json#/definitions/investigatorName"
@@ -207,7 +207,7 @@
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/IQ"
     },
     "isStranded": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/ngs.json#/definitions/isStranded"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/ngs.json#/definitions/isStranded"
     },
     "libraryBatch": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/libraryBatch"
@@ -216,10 +216,10 @@
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/libraryID"
     },
     "libraryPrep": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/ngs.json#/definitions/libraryPrep"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/ngs.json#/definitions/libraryPrep"
     },
     "libraryPreparationMethod": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/ngs.json#/definitions/libraryPreparationMethod"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/ngs.json#/definitions/libraryPreparationMethod"
     },
     "mannerOfDeath": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/mannerOfDeath"
@@ -249,13 +249,13 @@
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/neuropathDescription"
     },
     "nucleicAcidSource": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/ngs.json#/definitions/nucleicAcidSource"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/ngs.json#/definitions/nucleicAcidSource"
     },
     "numberCells": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/numberCells"
     },
     "organ": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/organ"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/experimentalData.json#/definitions/organ"
     },
     "organRIN": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/organRIN"
@@ -291,13 +291,13 @@
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/percentAligned"
     },
     "pH": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/neuro.json#/definitions/pH"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/neuro.json#/definitions/pH"
     },
     "platform": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/platform"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/experimentalData.json#/definitions/platform"
     },
     "PMI": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/neuro.json#/definitions/PMI"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/neuro.json#/definitions/PMI"
     },
     "PMICertain": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/neuro.json#/definitions/PMICertain"
@@ -324,16 +324,16 @@
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/raceDetail"
     },
     "readLength": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/ngs.json#/definitions/readLength"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/ngs.json#/definitions/readLength"
     },
     "readPair": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/ngs.json#/definitions/readPair"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/ngs.json#/definitions/readPair"
     },
     "readStrandOrigin": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/ngs.json#/definitions/readStrandOrigin"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/ngs.json#/definitions/readStrandOrigin"
     },
     "referenceSet": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/curatedData.json#/definitions/referenceSet"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/curatedData.json#/definitions/referenceSet"
     },
     "reportedGender": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/reportedGender"
@@ -351,7 +351,7 @@
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/rRNARate"
     },
     "runType": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/ngs.json#/definitions/runType"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/ngs.json#/definitions/runType"
     },
     "sequencingBatch": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/sequencingBatch"
@@ -363,10 +363,10 @@
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/sexChromosome"
     },
     "species": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/species"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/experimentalData.json#/definitions/species"
     },
     "specimenID": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/specimenID"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/experimentalData.json#/definitions/specimenID"
     },
     "study": {
       "description": "Study",
@@ -447,10 +447,10 @@
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/technicalReplicate"
     },
     "terminalDifferentiationPoint": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/terminalDifferentiationPoint"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/experimentalData.json#/definitions/terminalDifferentiationPoint"
     },
     "tissue": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/tissue"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/experimentalData.json#/definitions/tissue"
     },
     "totalReads": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/totalReads"
@@ -459,7 +459,7 @@
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/transposaseBatch"
     },
     "treatmentType": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/neuro.json#/definitions/treatmentType"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/neuro.json#/definitions/treatmentType"
     },
     "validBarcodeReads": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/ngs.json#/definitions/validBarcodeReads"

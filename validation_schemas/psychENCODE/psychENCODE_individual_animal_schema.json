@@ -1,18 +1,18 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id":"http://example.com/psychENCODE_schema.json",
-  "title": "PsychENCODE Individual Metadata Schema",
-  "description": "Validates PsychENCODE individual metadata",
+  "title": "PsychENCODE Individual Animal Metadata Schema",
+  "description": "Validates PsychENCODE individual animal metadata",
   "type": "object",
   "properties": {
     "individualID": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/individualID"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/experimentalData.json#/definitions/individualID"
     },
     "individualIdSource": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/individualIdSource"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/experimentalData.json#/definitions/individualIdSource"
     },
     "species": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/experimentalData.json#/definitions/species"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/experimentalData.json#/definitions/species"
     },
     "sexChromosome": {
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/experimentalData.json#/definitions/sexChromosome"
@@ -24,7 +24,7 @@
       "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/reference_definitions/clinicalData.json#/definitions/dateOfDeath"
     },
     "treatmentType": {
-      "$ref": "https://raw.githubusercontent.com/Sage-Bionetworks/synapseAnnotations/schemaorg-conversion/synapseAnnotations/data/json-schemas-from-original/definitions/neuro.json#/definitions/treatmentType"
+      "$ref": "https://raw.githubusercontent.com/cw-dvr8/JSON-validation-schemas/master/validation_schemas/current_annotations_schemas/neuro.json#/definitions/treatmentType"
     }
   },
   "required": [
