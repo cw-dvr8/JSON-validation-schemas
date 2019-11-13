@@ -22,8 +22,7 @@ import argparse
 import json
 import jsonschema
 import pandas as pd
-from schema_tools import convert_bool_to_string, convert_string_to_bool, convert_string_to_numeric
-from schema_tools import load_and_deref, validate_object, values_list_keywords
+import schema_tools
 
 # This function is necessary when references are allowed to contain multiple
 # types. It has been decided as of now that multiple types will not be allowed,
@@ -32,7 +31,7 @@ from schema_tools import load_and_deref, validate_object, values_list_keywords
 
 def convert_to_boolean(data_row, val_schema):
 
-    values_list_keys = values_list_keywords()
+    values_list_keys = schema_tools.VALUES_LIST_KEYWORD
     converted_row = dict()
 
     # We only want to convert strings into Booleans if the field has a controlled
@@ -76,7 +75,7 @@ def convert_to_boolean(data_row, val_schema):
 
 def convert_from_boolean(data_row, val_schema):
 
-    values_list_keys = values_list_keywords()
+    values_list_keys = schema_tools.VALUES_LIST_KEYWORDS
     converted_row = dict()
 
     for rec_key in data_row:
@@ -127,7 +126,7 @@ def main():
     data_dict_list = []
 
     # Load the JSON schema and create a validator..
-    _, json_schema = load_and_deref(args.json_schema_file)
+    _, json_schema = schema_tools.load_and_deref(args.json_schema_file)
     schema_validator = jsonschema.Draft7Validator(json_schema)
 
     # If the object to be validated is a manifest file, read it into a pandas
@@ -161,9 +160,9 @@ def main():
         # Booleans to strings if the key is also allowed to contain string values.
         converted_clean_record = convert_from_boolean(clean_record, json_schema)
 
-        row_text = f"Row {row_number + first_data_row}:"
-        row_error = validate_object(schema_validator, converted_clean_record, prepend_text=row_text)
+        schema_errors = schema_validator.iter_errors(converted_clean_record)
 
+        row_error = schema_tools.validation_errors(schema_errors)
         if row_error:
             validation_errors += row_error
 
