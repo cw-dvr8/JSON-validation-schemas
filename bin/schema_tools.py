@@ -78,6 +78,113 @@ def convert_string_to_numeric(input_value):
     return return_value
 
 
+def convert_to_boolean(data_row, val_schema):
+    """
+    Function: convert_to_boolean
+
+    Purpose: Converts string representations of Boolean values to actual
+             Boolean values.
+
+    This function in used by JSON validation programs in cases where a JSON
+    schema reference is allowed to contain multiple types. In cases where a
+    reference is defined as both Boolean and string, or Boolean and numeric,
+    the Boolean values will be read as strings and will therefore fail 
+    validation if the string representations of true and false are not
+    enumerated as possible values.
+
+    Input parameters: 
+        data_row - a dictionary representing a single row of data
+        val_schema - the JSON validation schema representing the structure
+                     of the data row.
+
+    Returns: A dictionary representing the data row, with string Boolean values
+             converted to actual Boolean values.
+    """
+    converted_row = dict()
+
+    # We only want to convert strings into Booleans if the field has a controlled
+    # values list and has more than one possible type, e.g. True, False, "Unknown".
+    # In that instance, we want to convert a string true/false to a Boolean true/false
+    # while ignoring case (true, TRUE, False, FaLsE, etc.).
+    for rec_key in data_row:
+        schema_val = val_schema["properties"][rec_key]
+
+        # Pass the row through if:
+        # a) the key is not in the schema, i.e. the site put extra columns in the file;
+        # b) the value is not a string;
+        # c) the value is a string but there are no other alternative types/values for it in the schema
+        if ((rec_key not in val_schema["properties"])
+            or (not(isinstance(data_row[rec_key], str)))
+            or ((isinstance(data_row[rec_key], str))
+                 and not(any(value_key in schema_val for value_key in VALUES_LIST_KEYWORDS)))):
+            converted_row[rec_key] = data_row[rec_key]
+
+        else:
+            vkey = list(set(VALUES_LIST_KEYWORDS).intersection(schema_val))[0]
+            for schema_values in schema_val[vkey]:
+                if ("type" in schema_values) and (schema_values["type"] == "boolean"):
+                    converted_row[rec_key] = convert_string_to_bool(data_row[rec_key])
+                    break
+                else:
+                    converted_row[rec_key] = data_row[rec_key]
+
+    return converted_row
+
+
+def convert_to_numeric(data_row, val_schema):
+    """
+    Function: convert_to_numeric
+
+    Purpose: Converts string representations of numeric values (integer or
+             float) into actual numeric values.
+
+    This function in used by JSON validation programs in cases where a JSON
+    schema reference is allowed to contain multiple types. In cases where a
+    reference is defined as both numeric and string, or numeric and Boolean,
+    the numeric values will be read as strings and will therefore fail 
+    validation.
+
+    Input parameters: 
+        data_row - a dictionary representing a single row of data
+        val_schema - the JSON validation schema representing the structure
+                     of the data row.
+
+    Returns: A dictionary representing the data row, with string numeric values
+             converted to actual numeric values.
+    """
+    converted_row = dict()
+
+    # We only want to convert strings into numbers if the field has a controlled
+    # values list and has more than one possible type, e.g. number and string.
+    # In that instance, we want to convert a string number to an actual number.
+    for rec_key in data_row:
+        schema_val = val_schema["properties"][rec_key]
+
+        # Pass the row through if:
+        # a) the key is not in the schema, i.e. the site put extra columns in the file;
+        # b) the value is not a string;
+        # c) the value is a string but there are no other alternative types/values for it in the schema
+        if ((rec_key not in val_schema["properties"])
+            or (not(isinstance(data_row[rec_key], str)))
+            or ((isinstance(data_row[rec_key], str))
+                 and not(any(value_key in schema_val for value_key in VALUES_LIST_KEYWORDS)))):
+            converted_row[rec_key] = data_row[rec_key]
+
+        else:
+            # If it is possible for the key to contain a number and the string value is some sort of number,
+            # convert the string into a number.
+            vkey = list(set(VALUES_LIST_KEYWORDS).intersection(schema_val))[0]
+            for schema_values in schema_val[vkey]:
+                if (("type" in schema_values)
+                     and (schema_values["type"] in ["integer", "number"])):
+                    converted_row[rec_key] = convert_string_to_numeric(data_row[rec_key])
+                    break
+                else:
+                    converted_row[rec_key] = data_row[rec_key]
+
+    return converted_row
+
+
 def get_schema_properties(json_schema):
     """
     Function: get_schema_properties
