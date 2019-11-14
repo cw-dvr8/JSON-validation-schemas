@@ -594,7 +594,7 @@
         ]
       },
       "then": {
-        "required": ["deathAge", "deathAgeUnits", "causeDeath", "deathManner", "postmortemTox",
+        "required": ["ageOfDeath", "ageOfDeathUnits", "causeOfDeath", "mannerOfDeath", "postmortemTox",
 	             "postmortemToxSource", "medRecordTox"]
       }
     },
