@@ -3,7 +3,7 @@
   "$id": "http://example.com/neuro.json",
   "definitions": {
     "BrodmannArea": {
-      "description": "",
+      "description": "A segmentation of the cerebral cortex on the basis of cytoarchitecture",
       "type": "string"
     },
     "isConsortiumAnalysis": {

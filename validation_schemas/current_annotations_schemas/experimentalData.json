@@ -16,7 +16,7 @@
         },
         {
           "const": "open field test",
-          "description": "A test utilizing an enclosure consisting of a single area bordered by clear or opaque walls, used to measure movement, exploratory behavior, etc of an experimental subject",
+          "description": {},
           "source": "http://purl.obolibrary.org/obo/MMO_0000258"
         },
         {
@@ -429,6 +429,11 @@
     "dataSubtype": {
       "description": "Further qualification of dataType, which may be used to indicate the state of processing of the data, aggregation of the data, or presence of metadata.",
       "anyOf": [
+        {
+          "const": "normalized",
+          "description": "A data set that is produced as the output of a normalization data transformation.",
+          "source": "http://purl.obolibrary.org/obo/OBI_0000451"
+        },
         {
           "const": "dataMatrix",
           "description": "A file of data containing multiple values for multiple samples.",
