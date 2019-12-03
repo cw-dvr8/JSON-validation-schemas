@@ -37,7 +37,7 @@ def process_schema(json_schema_file):
 
     Purpose: Load the JSON schema into a dictionary, resolve any remote
              references, and convert into a Pandas dataframe suitable to use
-             to create Synapse tables.
+             for creating Synapse tables.
 
     Arguments: JSON schema file reference
 
