@@ -24,7 +24,7 @@ Execution: create_templates_from_schema.py <JSON schema> <output file>
 """
 
 import argparse
-import pandas as pd 
+import pandas as pd
 import schema_tools
 import template_tools
 
@@ -36,7 +36,7 @@ def main():
     parser.add_argument("output_file", type=str,
                         help="Full pathname for the output file")
     parser.add_argument("type_of_output", type=str,
-                        help="Type of output (csv or excel")
+                        help="Type of output (csv or excel)")
 
     args = parser.parse_args()
 
