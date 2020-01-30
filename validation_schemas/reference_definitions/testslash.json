@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/testslash.json",
+  "definitions":{
+    "260/230": {
+      "description": "DNA QC metric - ratio of absorbance at 260 nm and 230 nm",
+      "type": "number"
+    },
+    "260/280": {
+      "description": "DNA QC metric - ratio of absorbance at 260 nm and 280 nm",
+      "type": "number"
+    }
+  }
+}
